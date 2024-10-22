@@ -1,0 +1,56 @@
+.banner {
+    position: relative;
+    width: 100%;  /* Ensure the banner takes up the full width */
+}
+
+img {
+    width: 100%;
+    height: auto; /* Ensures the image scales proportionally */
+}
+
+.top-left {
+    position: absolute;
+    top: 20px;  /* Adjust for vertical alignment */
+    left: 20px; /* Adjust for horizontal alignment */
+    color: #fff;
+    line-height: 1.3;  /* Increase line spacing to prevent overlap */
+}
+
+.top-left .title1 {
+    font-size: 2rem;  /* Adjust size as needed */
+    margin-bottom: 10px;  /* Adds space below this line */
+}
+
+.top-left .title2 {
+    font-size: 2.5rem;  /* Larger font for emphasis */
+    margin-bottom: 10px;  /* Adds space between this and the year */
+}
+
+.top-left .year {
+    font-size: 1.8rem;  /* Adjust size as needed */
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    /* Responsive adjustments for smaller screens */
+    .top-left {
+        top: 10px;
+        left: 10px;
+    }
+
+    .bottom-right {
+        font-size: 1rem;
+    }
+
+    .top-left .title1, .top-left .title2, .top-left .year {
+        font-size: 1.5rem;
+    }
+}
