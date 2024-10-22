@@ -61,6 +61,17 @@
             max-width: 100%; /* Ensure images are responsive */
             height: auto;
         }
+
+        h1 {
+            font-size: 4.5rem; /* Adjust for large header */
+            text-align: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            .fancy-box {
+                max-width: 1000px; /* Increase the width on larger screens */
+            }
+        }
     </style>
 </head>
 
@@ -93,9 +104,7 @@
                 </a>    
             </div>
             
-            <div style="font-size: 4.5rem; margin-bottom: 30px;">
-                Student Competition
-            </div>
+            <h1>Student Competition</h1>
             <div style="font-size: 2.5rem; margin-bottom: 20px;">
                 <span class="title2" style="font-size: 1.8rem; margin-bottom: 10px;">
                     on Explainable AI (XAI) in Personalized Cancer Medicine
@@ -116,26 +125,31 @@
 
         <!-- Fancy Box for Competition Details -->
         <div class="fancy-box">
-            <div style="font-size: 2.5rem; margin-bottom: 30px;">
+            <div style="font-size: 1.5rem; margin-bottom: 20px;">
                 Goal: Develop explainable AI models to predict drug response.<br><br>
 
                 Prizes: The top 5 teams will be invited to present their work at the IEEE conference.<br>
                 The top three teams will receive the following awards:<br><br>
 
-                1st Place: $400<br>
-                2nd Place: $250<br>
-                3rd Place: $150<br><br>
+                <ul>
+                  <li><b>1st Place:</b> $400</li>
+                  <li><b>2nd Place:</b> $250</li>
+                  <li><b>3rd Place:</b> $150</li>
+                </ul>
 
-                Important Dates: Submission Deadline: December 15, 2024 <br>
+                <b>Important Dates:</b>  <br>
+                <ul>
+                  <li><b>Submission Deadline:</b>  December 15, 2024</li>>
+                </ul>
             </div>
         </div>
 
         <!-- Justified text section -->
-
+        <div class="justified-text">
             <p align="justify">
                 The rise of Computational Intelligence (CI) and Artificial Intelligence (AI) in biomedical and healthcare data analysis has led to significant advancements in cancer genomics, identifying new biomarkers and personalizing treatment strategies through vast genomic data processing. However, AI’s integration into clinical settings is hindered by its opaque, “black-box” nature, which lacks transparency in decision-making. This poses a challenge for clinicians needing understandable, trustworthy AI recommendations. The student competition aims to address this by encouraging the development of Explainable AI (XAI) models that not only predict drug responses accurately but also provide clear, interpretable explanations. This competition seeks to bridge AI research with clinical practice, enhancing clinician confidence and patient outcomes through transparent, explainable AI solutions.
             </p>
-
+        </div>
     </div>
 
     <footer>
