@@ -16,15 +16,16 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            max-width: 100%;
         }
 
-        /* Fancy Box Style */
         .fancy-box {
             border: 2px solid #04AA6D; /* Green border */
             border-radius: 10px; /* Rounded corners */
             padding: 20px;
             margin: 20px auto;
-            max-width: 600px; /* Width for the fancy box */
+            max-width: 800px; /* Adjust width for the fancy box */
             background-color: #f9f9f9; /* Light background */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
             text-align: center; /* Center text inside */
@@ -36,9 +37,16 @@
             font-weight: bold;
         }
 
-        /* Justified text section */
+        /* Center content container with full width */
+        .content {
+            width: 90%; /* Use a larger portion of the page */
+            max-width: 1200px; /* Allow content to expand more */
+            margin: 0 auto;
+            text-align: center;
+        }
+
         .justified-text {
-            max-width: 900px;
+            max-width: 1000px; /* Slightly larger text container */
             margin: 20px auto;
             text-align: justify;
         }
@@ -48,13 +56,17 @@
             padding: 20px;
             font-size: 0.9rem;
         }
-    </style>
 
+        img {
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
 
-    <table class="navigation">
+    <table class="navigation" style="width: 100%;">
         <tr>
             <td class="navigation">
                 <a class="current" title="Conference Home Page" href=".">Home</a>
@@ -72,7 +84,7 @@
 
     <!-- Main content section -->
     <div class="content">
-        <div class="banner" style="text-align: center;">
+        <div class="banner">
             <div style="font-size: 3.5rem; margin-bottom: 20px;">
                 <a href="https://ieee-ssci.org/" target="_blank">
                     <span class="title1" style="font-size: 3rem; margin-bottom: 10px;">
@@ -90,41 +102,40 @@
                 </span>
             </div>
             
-            <img src="assets/xAI2.svg" alt="IEEE-SSCI 2025" style="width: auto; max-width: 100%; height: auto;">
-            
+            <img src="assets/xAI2.svg" alt="IEEE-SSCI 2025">
         </div>
-    </div>
 
-    <!-- Fancy Box for Kaggle Competition Link -->
-    <div class="fancy-box">
-        <a href="https://www.kaggle.com/t/79d622fabd9b4f93b87f57972dce7562" target="_blank">
+        <!-- Fancy Box for Kaggle Competition Link -->
+        <div class="fancy-box">
+            <a href="https://www.kaggle.com/t/79d622fabd9b4f93b87f57972dce7562" target="_blank">
+                <div style="font-size: 2.5rem; margin-bottom: 30px;">
+                    Competition available on Kaggle       
+                </div>
+            </a>
+        </div>
+
+        <!-- Fancy Box for Competition Details -->
+        <div class="fancy-box">
             <div style="font-size: 2.5rem; margin-bottom: 30px;">
-                Competition available on Kaggle       
+                Goal: Develop explainable AI models to predict drug response.<br><br>
+
+                Prizes: The top 5 teams will be invited to present their work at the IEEE conference.<br>
+                The top three teams will receive the following awards:<br><br>
+
+                1st Place: $400<br>
+                2nd Place: $250<br>
+                3rd Place: $150<br><br>
+
+                Important Dates: Submission Deadline: December 15, 2024 <br>
             </div>
-        </a>
-    </div>
-
-    <!-- Fancy Box for Competition Details -->
-    <div class="fancy-box">
-        <div style="font-size: 2.5rem; margin-bottom: 30px;">
-            Goal: Develop explainable AI models to predict drug response.<br><br>
-
-            Prizes: The top 5 teams will be invited to present their work at the IEEE conference.<br>
-            The top three teams will receive the following awards:<br><br>
-
-            1st Place: $400<br>
-            2nd Place: $250<br>
-            3rd Place: $150<br><br>
-
-            Important Dates: Submission Deadline: December 15, 2024 <br>
         </div>
-    </div>
 
-    <!-- Justified text section -->
-    <div class="justified-text">
-        <p align="justify">
-            The rise of Computational Intelligence (CI) and Artificial Intelligence (AI) in biomedical and healthcare data analysis has led to significant advancements in cancer genomics, identifying new biomarkers and personalizing treatment strategies through vast genomic data processing. However, AI’s integration into clinical settings is hindered by its opaque, “black-box” nature, which lacks transparency in decision-making. This poses a challenge for clinicians needing understandable, trustworthy AI recommendations. The student competition aims to address this by encouraging the development of Explainable AI (XAI) models that not only predict drug responses accurately but also provide clear, interpretable explanations. This competition seeks to bridge AI research with clinical practice, enhancing clinician confidence and patient outcomes through transparent, explainable AI solutions.
-        </p>
+        <!-- Justified text section -->
+
+            <p align="justify">
+                The rise of Computational Intelligence (CI) and Artificial Intelligence (AI) in biomedical and healthcare data analysis has led to significant advancements in cancer genomics, identifying new biomarkers and personalizing treatment strategies through vast genomic data processing. However, AI’s integration into clinical settings is hindered by its opaque, “black-box” nature, which lacks transparency in decision-making. This poses a challenge for clinicians needing understandable, trustworthy AI recommendations. The student competition aims to address this by encouraging the development of Explainable AI (XAI) models that not only predict drug responses accurately but also provide clear, interpretable explanations. This competition seeks to bridge AI research with clinical practice, enhancing clinician confidence and patient outcomes through transparent, explainable AI solutions.
+            </p>
+
     </div>
 
     <footer>
