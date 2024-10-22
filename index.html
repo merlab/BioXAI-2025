@@ -11,7 +11,45 @@
     <meta name="KeyWords" content="Conference">
     <title> BioXAI-2025 </title>
 
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Fancy Box Style */
+        .fancy-box {
+            border: 2px solid #04AA6D; /* Green border */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px; /* Width for the fancy box */
+            background-color: #f9f9f9; /* Light background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: center; /* Center text inside */
+        }
+
+        .fancy-box a {
+            text-decoration: none;
+            color: #04AA6D;
+            font-weight: bold;
+        }
+
+        /* Justified text section */
+        .justified-text {
+            max-width: 900px;
+            margin: 20px auto;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -21,45 +59,35 @@
             <td class="navigation">
                 <a class="current" title="Conference Home Page" href=".">Home</a>
             </td>
-<!--             <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
-            </td> -->
             <td class="navigation">
                 <a title="Conference Program" href="program">Program</a> 
-            </td>
-<!--             <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
-            </td> -->
+            </td>    
             <td class="navigation">
                 <a title="Conference Flyer" href="Organizers">Organizers</a>
             </td>
         </tr>
     </table>
     <hr style="border: 0; height: 2px; background: #ccc; margin: 40px 0;">
-<!--     <div class="navbar">
-        <a class="current" href=".">Home</a>
-        <a href="program">Program</a>
-        <a href="Organizers">Organizers</a>
-        <a href="registration" class="right">Registration</a> 
-    </div> -->
+
 
     <!-- Main content section -->
     <div class="content">
         <div class="banner" style="text-align: center;">
-			<div style="font-size: 3.5rem; margin-bottom: 20px;">
-				<a href="https://ieee-ssci.org/" target="_blank">
-                <span class="title1" style="font-size: 3rem; margin-bottom: 10px;">
-						IEEE-SSCI 2025
-						</span>
-					 </a>	
+            <div style="font-size: 3.5rem; margin-bottom: 20px;">
+                <a href="https://ieee-ssci.org/" target="_blank">
+                    <span class="title1" style="font-size: 3rem; margin-bottom: 10px;">
+                        IEEE-SSCI 2025
+                    </span>
+                </a>    
             </div>
             
-			 <div style="font-size: 4.5rem; margin-bottom: 30px;">
+            <div style="font-size: 4.5rem; margin-bottom: 30px;">
                 Student Competition
             </div>
             <div style="font-size: 2.5rem; margin-bottom: 20px;">
-
-                <span class="title2" style="font-size: 1.8rem; margin-bottom: 10px;">on Explainable AI (XAI) in Personalized Cancer Medicine</span>
+                <span class="title2" style="font-size: 1.8rem; margin-bottom: 10px;">
+                    on Explainable AI (XAI) in Personalized Cancer Medicine
+                </span>
             </div>
             
             <img src="assets/xAI2.svg" alt="IEEE-SSCI 2025" style="width: auto; max-width: 100%; height: auto;">
@@ -67,37 +95,37 @@
         </div>
     </div>
 
-
-
-<!-- Put this text and link in a fancy box  put it at center of the page and below image -->
-<a href="https://www.kaggle.com/t/79d622fabd9b4f93b87f57972dce7562" target="_blank">
-<div style="font-size: 2.5rem; margin-bottom: 30px;">
-                Competition avaliable on Kaggle       
+    <!-- Fancy Box for Kaggle Competition Link -->
+    <div class="fancy-box">
+        <a href="https://www.kaggle.com/t/79d622fabd9b4f93b87f57972dce7562" target="_blank">
+            <div style="font-size: 2.5rem; margin-bottom: 30px;">
+                Competition available on Kaggle       
             </div>
-            </a>
+        </a>
+    </div>
 
+    <!-- Fancy Box for Competition Details -->
+    <div class="fancy-box">
+        <div style="font-size: 2.5rem; margin-bottom: 30px;">
+            Goal: Develop explainable AI models to predict drug response.<br><br>
 
-<!-- Put this text and link in a fancy box  put it at center of the page and below image -->
-<div style="font-size: 2.5rem; margin-bottom: 30px;">
-Goal: Develop explainable AI models to predict drug response.<br>
+            Prizes: The top 5 teams will be invited to present their work at the IEEE conference.<br>
+            The top three teams will receive the following awards:<br><br>
 
-Prizes: The top 5 teams will be invited to present their work at the IEEE conference.
-The top three teams will receive the following awards:
+            1st Place: $400<br>
+            2nd Place: $250<br>
+            3rd Place: $150<br><br>
 
-    1st Place: $400
-    2nd Place: $250
-    3rd Place: $150
+            Important Dates: Submission Deadline: December 15, 2024 <br>
+        </div>
+    </div>
 
-Important Dates: Submission Deadline: December 15, 2024 <br>
-</div>
-            
-<!-- justify the text below  -->
-    <p align="justify">
-The rise of Computational Intelligence (CI) and Artificial Intelligence (AI) in biomedical and healthcare data analysis has led to significant advancements in cancer genomics, identifying new biomarkers and personalizing treatment strategies through vast genomic data processing. However, AI’s integration into clinical settings is hindered by its opaque, “black-box” nature, which lacks transparency in decision-making. This poses a challenge for clinicians needing understandable, trustworthy AI recommendations. The student competition aims to address this by encouraging the development of Explainable AI (XAI) models that not only predict drug responses accurately but also provide clear, interpretable explanations. This competition seeks to bridge AI research with clinical practice, enhancing clinician confidence and patient outcomes through transparent, explainable AI solutions.
-    </p>
-
-
-</body>
+    <!-- Justified text section -->
+    <div class="justified-text">
+        <p align="justify">
+            The rise of Computational Intelligence (CI) and Artificial Intelligence (AI) in biomedical and healthcare data analysis has led to significant advancements in cancer genomics, identifying new biomarkers and personalizing treatment strategies through vast genomic data processing. However, AI’s integration into clinical settings is hindered by its opaque, “black-box” nature, which lacks transparency in decision-making. This poses a challenge for clinicians needing understandable, trustworthy AI recommendations. The student competition aims to address this by encouraging the development of Explainable AI (XAI) models that not only predict drug responses accurately but also provide clear, interpretable explanations. This competition seeks to bridge AI research with clinical practice, enhancing clinician confidence and patient outcomes through transparent, explainable AI solutions.
+        </p>
+    </div>
 
     <footer>
         &copy; 2025
@@ -105,5 +133,5 @@ The rise of Computational Intelligence (CI) and Artificial Intelligence (AI) in 
     </footer>
 
 </body>
-</html>
 
+</html>
